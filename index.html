@@ -119,6 +119,7 @@ str # => "trusted content&amp;lt;em&amp;gt;untrusted&amp;lt;/em&amp;gt;"
 
         <section>
           <h2>Appending: unsafe + safe</h2>
+          <ul>
             <li class="fragment">
               Appending HTML-safe content to an unsafe string produces an unsafe
               result
@@ -129,7 +130,8 @@ str += "&lt;em&gt;trusted&lt;/em&gt;".html_safe
 str.html_safe? # =&gt; false
 str # => "not trusted&lt;em&gt;trusted&lt;/em&gt;"
     # entire string will be escaped when rendered
-              </code></pre>
+            </code></pre>
+          </ul>
         </section>
 
         <section>
